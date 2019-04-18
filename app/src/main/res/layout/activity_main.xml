@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="laboratory.dxy.jack.com.textureviewdome.MainActivity">
+
+  <!--  <com.yasic.library.particletextview.View.ParticleTextView
+        android:id="@+id/particleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.syd.oden.colorsphere.ColorCloudView
+        android:id="@+id/colorCloudView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:autoScrollMode="decelerate"
+        app:radiusPercent="0.6"
+        app:scrollSpeed="3" />-->
+
+
+
+   <!-- <laboratory.dxy.jack.com.textureviewdome.CstStoreHouseAnimView
+        android:id="@+id/mCstStoreHouseAnimView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />-->
+
+   <!-- <laboratory.dxy.jack.com.textureviewdome.LoadingPathAnimView
+        android:id="@+id/mLoadingPathAnimView"
+        android:layout_below="@+id/mCstStoreHouseAnimView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+   <!-- <laboratory.dxy.jack.com.textureviewdome.ZYDownloading
+        android:id="@+id/mZYDownloading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />-->
+
+
+
+    <com.sdsmdg.harjot.rotatingtext.RotatingTextWrapper
+        android:visibility="gone"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/start"
+        android:id="@+id/mRotatingTextWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+  <FrameLayout
+      android:id="@+id/test"
+      android:layout_above="@+id/start"
+      android:layout_marginBottom="300dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+
+    <Button
+        android:id="@+id/start"
+        android:onClick="start"
+        android:text="开始"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_toLeftOf="@+id/start"
+        android:onClick="end"
+        android:text="结束"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <!--<jp.co.recruit_lifestyle.android.widget.WaveView-->
+        <!--android:id="@+id/mWaveView1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+
+
+    <laboratory.dxy.jack.com.textureviewdome.views.WaveView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/mWaveView2"
+        android:layout_width="300dp"
+        android:layout_height="100dp" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="CircularBarPagerStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_arc_max">100</item>
+        <item name="arc_progress">0</item>
+
+        <item name="progress_arc_clockwise_outline_width">0.75dp</item>
+        <item name="progress_arc_counter_clockwise_outline_width">0.75dp</item>
+        <item name="progress_arc_clockwise_width">8dp</item>
+        <item name="progress_arc_counter_clockwise_width">8dp</item>
+    </style>
+
+
+
+    <!--<style name="AppTheme" parent="AppBaseTheme" />-->
+
+
+    <!--<style name="TSB">-->
+
+    <!--</style>-->
+</resources>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "laboratory.dxy.jack.com.textureviewdome"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+
+    //视频播放器
+    compile 'com.github.xiaoyanger0825:NiceVieoPlayer:v1.5'
+    //离子束
+    compile 'yasic.library.ParticleTextView:particletextview:0.0.3'
+    //上下滚动字体
+    compile 'com.sdsmdg.harjot:rotatingtext:1.0.1'
+    compile project(path: ':libzxing')
+    //dialog
+    compile 'com.github.jiang111:IndicatorDialog:v1.2.2'
+    //球形3d颜色选择器
+    compile project(path: ':colorsphere')
+    //SVG
+    compile 'com.github.mcxtzhang:PathAnimView:V1.0.0'
+    //步骤视图
+    //    compile 'com.github.canner:android-stepsview:<VERSION>'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    //appUpdate
+    compile 'com.github.czy1121:update:1.1.1'
+    compile 'com.qianwen:update-app:3.2.7'
+    //菜单
+    compile 'com.github.cdflynn:turn-layout-manager:v1.0'
+    //
+    //    //rxjava 1
+    compile 'io.reactivex:rxjava:1.2.9'
+    //    compile 'io.reactivex:rxandroid:1.2.0'
+    //    //权限引导
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    compile 'com.qianwen:okhttp-utils:3.8.0'
+    //波纹
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //v1.6.0    下拉bar消失
+    compile 'com.github.ksoichiro:android-observablescrollview:v1.6.0'
+    //textView闪烁
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    //滑动退出
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    //数字圆形进度显示库
+    compile 'com.github.orangegangsters:library:1.0.0@aar'
+    //3DViewPager
+    compile 'com.github.moondroid.coverflow:library:1.0'
+    //水滴下拉加载
+    compile 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.1'
+    compile project(path: ':jackupdate')
+
+    compile 'com.nineoldandroids:library:2.4.0'
+
+
+    compile 'skin.support:skin-support-design:1.2.4'
+    // skin-support-design material design 控件支持[可选]
+    compile 'skin.support:skin-support-cardview:1.2.0' // skin-support-cardview CardView 控件支持[可选]
+    compile 'skin.support:skin-support-constraint-layout:1.0.2'
+    // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+}
